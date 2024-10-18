@@ -1,0 +1,13 @@
+server:    
+  port: 8761 # 해당 서버의 포트를 지정한다.
+
+spring: 
+  application:
+    name: eureka-service # application 이름을 지정.
+
+eureka:
+  client:
+    register-with-eureka: false # 해당 서버를 클라이언트로 동작시키겠냐는 설정.
+    fetch-registry: false  # 레지스트리에 있는 정보를 가져올지에 대한 여부
+  instance:
+    hostname: eureka1  # 호스트 이름
